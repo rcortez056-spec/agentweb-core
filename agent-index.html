@@ -1,1 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentWeb Core - Runtime</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 40px; margin: 0; }
+        .container { max-width: 800px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
+        h1 { color: #38bdf8; margin-top: 0; }
+        .status { display: inline-block; padding: 6px 12px; background: #065f46; color: #34d399; border-radius: 20px; font-size: 14px; font-weight: 600; margin-bottom: 20px; }
+        pre { background: #0f172a; padding: 15px; border-radius: 8px; overflow-x: auto; color: #cbd5e1; border: 1px solid #334155; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>AgentWeb Core</h1>
+        <div class="status">● Runtime Active (Versailles)</div>
+        <p>Browser-native agent network runtime conforming to the open agentic web specification.</p>
+        <h3>Loaded Agent Specification (.json)</h3>
+        <pre id="spec-view">Loading agent network specification...</pre>
+    </div>
 
+    <script>
+        // Sample agent spec conformance payload
+        const agentSpec = {
+            "runtime": "agentweb-core",
+            "version": "1.0.0",
+            "environment": "browser-native",
+            "status": "operational"
+        };
+        document.getElementById('spec-view').textContent = JSON.stringify(agentSpec, null, 2);
+    </script>
+</body>
+</html>

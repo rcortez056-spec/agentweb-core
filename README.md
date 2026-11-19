@@ -1,40 +1,27 @@
 # AgentWeb Core
 
-A static browser page that displays a sample agent-network spec. The multi-agent runtime described here is planned, not built.
+A static browser page that displays a sample agent-network spec. The multi-agent runtime described below is planned, not built.
 
-## Inspiration
-
-Web apps today depend heavily on server round-trips, and agents struggle to find and share state across separate sites. We wanted to explore a browser-native agent network, with agent capabilities described in a plain JSON file, as a starting point for the Open Agentic Web Challenge.
+**Live page:** https://agentweb-core.vercel.app
 
 ## What it does
 
-AgentWeb Core is a browser-side concept for agent networks. The live page displays a sample agent-network spec defined in the page's code. Multi-agent execution and peer discovery are planned.
+AgentWeb Core is a browser-side concept for agent networks. The live page displays a sample agent-network spec, defined in the page's code. Multi-agent execution and peer discovery are planned.
 
-## How we built it
+## How it's built
 
 A static HTML page with JavaScript, deployed on Vercel. No server backend.
 
-## Challenges we ran into
+## Files
 
-Deciding how flexible the agent spec should be for different agents, and how to keep it separate from the runtime that will eventually run it.
+- `index.html`: the page. It displays the sample agent-network spec.
 
-## Accomplishments
+## Run it
 
-A working static page that displays an agent-network spec.
+Visit the live page, or open `index.html` in a browser. No server or install is needed.
 
-## What we learned
+## Status
 
-Keeping the agent spec separate from the runtime is a useful starting point for a browser-native agent network.
+Working: the page displays a sample agent-network spec.
 
-## What's next
-
-Build the multi-agent execution loop and peer discovery described above.
-
-## Built with
-
-HTML, JavaScript, JSON, Vercel
-
-## Try it out
-
-- Live page: https://agentweb-core.vercel.app
-- GitHub: https://github.com/rcortez056-spec/agentweb-core
+Planned: multi-agent execution and peer discovery.

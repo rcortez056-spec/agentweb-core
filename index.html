@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgentWeb Core - Runtime</title>
+    <title>AgentWeb Core</title>
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0f172a; color: #f8fafc; padding: 40px; margin: 0; }
         .container { max-width: 800px; margin: 0 auto; background: #1e293b; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.5); }
@@ -15,14 +15,13 @@
 <body>
     <div class="container">
         <h1>AgentWeb Core</h1>
-        <div class="status">● Runtime Active (Versailles)</div>
-        <p>Browser-native agent network runtime conforming to the open agentic web specification.</p>
-        <h3>Loaded Agent Specification (.json)</h3>
+        <div class="status">● Loaded</div>
+        <p>A static browser page that displays a sample agent-network spec.</p>
+        <h3>Sample Agent Specification (.json)</h3>
         <pre id="spec-view">Loading agent network specification...</pre>
     </div>
-
     <script>
-        // Sample agent spec conformance payload
+        // Sample agent spec, defined in this page
         const agentSpec = {
             "runtime": "agentweb-core",
             "version": "1.0.0",
